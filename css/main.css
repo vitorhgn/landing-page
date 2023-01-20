@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #FEF9F9;
+}
+.container{
+    display: flex;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.image{
+    height: 100vh;
+    width: 50%;
+}
+main{
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+}
+.title{
+    padding-bottom: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    color: #FF735C;
+}
+.title h1{
+    display: flex;
+    gap: 10px;
+    padding-left: 30px ;
+    align-items: center;
+}
+.title img{
+    height: 30px;
+    width: 30px;
+}
+.login{
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    width: 50%;
+    gap: 30px;
+    padding-top: 60px;
+    padding-left: 20px;
+}
+.input{
+    background-color: #D9D9D9;
+    border: none;
+    border:1px solid #1E1E1E;
+    height: 35px;
+    padding: 8px;
+}
+#password{
+    background-image: url('/img/mdi_eye-off-outline.png');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 97%;
+}
+.button{
+    background: #FF735C;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.checkbox{
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+}
+input.checkbox{
+    background-color: red;
+}
+.register{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 15px;
+    gap: 10px;
+}
+.forget{
+    display: block;
+    margin: 0 auto;
+    color: #FF735C;
+}
+.signup{
+    background-color: transparent;
+    color: #FF735C;
+    border: 2px solid #FF735C;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
+@media (max-width: 800px) {
+	.container {
+		flex-direction: column;
+	}
+    .image{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+}
